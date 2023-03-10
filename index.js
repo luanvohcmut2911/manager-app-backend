@@ -20,6 +20,7 @@ app.use('/api', routerAPI);
 const port = process.env.PORT || 5000;
 
 mongoose.set('strictQuery', true);
+console.log(process.env.MONGO_URI);
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
